@@ -1,0 +1,99 @@
+header {
+  position: absolute;
+  height: 70px;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: var(--background-color);
+}
+header #navbar {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+header #navbar .navbar-logo {
+  color: var(--white-color);
+  text-decoration: none;
+}
+header #navbar .navbar-logo img {
+  width: 60px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header #navbar .menu-burger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+header #navbar .menu-burger .menu-bar {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: var(--white-color);
+}
+header #navbar .menu-burger .menu-bar::after, header #navbar .menu-burger .menu-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--white-color);
+  height: 100%;
+  width: 100%;
+}
+header #navbar .menu-burger .menu-bar::after {
+  bottom: 7px;
+}
+header #navbar .menu-burger .menu-bar::before {
+  bottom: -7px;
+}
+header #navbar .navbar-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 70%;
+  padding: 17px 0 0 2rem;
+  background-color: var(--background-color);
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+header #navbar .navbar-mobile.active {
+  transform: translateX(0%);
+}
+header #navbar .navbar-mobile--list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+header #navbar .navbar-mobile--list--item a {
+  color: var(--white-color);
+}
+header #navbar .navbar-mobile .menu-burger-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 65px;
+}
+header #navbar .navbar-mobile .menu-burger-close .menu-bar {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: var(--white-color);
+  rotate: 45deg;
+}
+header #navbar .navbar-mobile .menu-burger-close .menu-bar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: var(--white-color);
+  height: 100%;
+  width: 100%;
+  rotate: 90deg;
+}/*# sourceMappingURL=header.css.map */

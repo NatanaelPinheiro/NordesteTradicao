@@ -1,0 +1,27 @@
+
+:root{
+    --white-color: #fff;
+    --primary-color: black;
+    --secondary-color: black;
+    --background-color: #201B18;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}

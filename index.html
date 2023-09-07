@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant...">
+    <title>Nordeste Tradição</title>
+    <link rel="icon" href="./assets/icons/nordeste_tradicao_logo.png">
+    <link rel="stylesheet" href="./css/main/main.css">
+    <link rel="stylesheet" href="./css/header/header.css">
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="index.html" class="navbar-logo">
+                <img src="./assets/icons/nordeste_tradicao_logo.png" alt="Nordeste Tradição Logo">
+            </a>
+
+            <div class="menu-burger" onclick="toggleMenu()">
+                <span class="menu-bar"></span>
+            </div>
+
+            <div class="navbar-mobile">
+                <div class="menu-burger-close" onclick="toggleMenu()">
+                    <span class="menu-bar"></span>
+                </div>
+                <ul class="navbar-mobile--list">
+                    <li class="navbar-mobile--item"><a href="#home">Início</a></li>
+                    <li class="navbar-mobile--item"><a href="#special-offers">Ofertas Especiais</a></li>
+                    <li class="navbar-mobile--item"><a href="#about-us">Sobre nós</a></li>
+                    <li class="navbar-mobile--item"><a href="#locations">Fale Conosco</a></li>
+                </ul>
+                <li id="#book-link"><a href="#book">Reservar</a></li>
+            </div>
+        </div>
+    </header>
+    
+    <script src="./js/utils.js"></script>
+</body>
+</html>
